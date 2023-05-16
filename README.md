@@ -1,8 +1,8 @@
 # TITO_Trainning_Git
 
-### Table of contents
+## Table of contents
 
-#### [Chapter 1. Introduction]
+### [Chapter 1. Introduction]()
 
 ## Chapter 2. Creating Your Repositor
 ## Chapter 3. Branching, Places and GUIs
@@ -15,7 +15,7 @@
 
 <br></br>
 
-#### Chapter 1. Introduction
+### Chapter 1. Introduction
 - Git is a Distributed Version Control System - DVCS
 - Developed by Linus Torvalds in 2005.
 - Git is commonly used in source code management and software development document managementGit is commonly used in source code management and software development document management.
