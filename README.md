@@ -22,3 +22,45 @@
 - Git allows team members to work together on the same project efficiently and conveniently.
 
 <br></br>
+
+### Chapter 2. Creating Your Repositor
+
+<details>
+<summary>1. Create a repository then write code </summary>
+
+- Create a repository
+- Pull the repository to your computer 
+
+```
+$git clone HTTPS/SSH
+```
+
+- Add the files 
+
+```
+$git add .
+```
+
+- Commit at the command line
+
+```
+$git commit -m "commit"
+```
+
+- Push code 
+
+```
+$git push origin branch
+```
+
+</details>
+
+2. Create local project and push
+
+- Create a repository
+- Initialize git file
+
+```
+$git init 
+```
+
