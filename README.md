@@ -80,6 +80,8 @@ $git init
 
 ### Chapter 3. Branching, Places and GUIs
 
+1. Five places:
+
 ### Chapter 4. Merge, Pull Request and Handling Merge Conflicts
 
 ### Chapter 5. Rebasing, Amend and Cherry-Picking
