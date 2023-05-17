@@ -105,7 +105,27 @@ $git push origin branch
 
 ### Chapter 3. Branching, Places and GUIs
 
-1. Five places:
+<details>
+<summary>1. Five places</summary>
+
+
+- The work area : it is possible to have more than one work area ( out of rader ) .
+- The index (staging area) 
+- The local repository : commit 
+- The remote repository : pushing data 
+- The stash : save files that have been fixed but not committed or lost when changing branches.
+
+</details>
+
+<details>
+<summary>2. Branches</summary>
+
+
+
+
+</details>
+
+<br></br>
 
 ### Chapter 4. Merge, Pull Request and Handling Merge Conflicts
 
