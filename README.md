@@ -74,6 +74,31 @@ $git push origin branch
 $git init 
 ```
 
+
+- Add the files 
+
+```
+$git add .
+```
+
+- Commit at the command line
+
+```
+$git commit -m "commit"
+```
+
+- use to create a connection from local repo to host repo
+
+```
+$git remote add origin HTTPS/SSH
+```
+- Push code 
+
+```
+$git push origin branch
+```
+
+
 </details>
 
 <br></br>
