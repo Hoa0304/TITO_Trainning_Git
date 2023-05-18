@@ -312,7 +312,7 @@ Interactive rebase is a feature in Git that allows you to interact with and edit
 $git rebase -i <commit>
 ```
 
-> <commit> : commit hash, branch name or tag
+> '<commit>' : commit hash, branch name or tag
 
 </details>
 
@@ -450,8 +450,118 @@ $git push --tags
 
 ### Chapter 8. Aliases
 
+<details>
+<summary>1. Create alias</summary>
 
+
+```
+$ git config --global alias.<alias-name> '<git-command>'
+```
+
+> '<git-command>' Git command that you want to minify to alias.
+
+</details>
+
+
+
+<details>
+<summary>Create the st alias</summary>
+
+```
+$git config --global alias.st status
+``` 
+
+</detail>
+
+
+
+<details>
+<summary>Create a branch and 
+check it out</summary>
+
+```
+$git config --global alias.bc checkout -b 
+$git config --global alias.cb checkout -b 
+``` 
+
+> The important thing to notice here is that your alias can take one or more flags. 
+
+</detail>
+
+
+
+<details>
+<summary>A lot commits everything and waits for a message</summary>
+
+```
+$git config --global alias.cam commit -a -m
+``` 
+
+</detail>
+
+<details>
+<summary>Commits everything along with the message you give it</summary>
+
+```
+$git cam  "Here is you message"
+``` 
+
+</detail>
+
+
+<details>
+<summary>Offers me an alternative to log --oneline that gives much more information</summary>
+
+```
+$git config –global alias.lg log --graph --pretty=format:'%Cred%h%Creset 
+-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit
+``` 
+
+</detail>
+
+
+<details>
+<summary>Opens the global configuration file in your editor</summary>
+
+```
+$git config --edit --global
+``` 
+
+- Note :
+>  You can add aliases directly here if you like.
+>  If you are going to use more than one flag
+
+```
+$git config --global alias.nx "log --name-only --oneline"
+```
+
+</detail>
 
 <br></br>
 
 ### Chapter 9. Using the Log
+
+<details>
+<summary>Log at the command line</summary>
+
+```
+$git log --oneline
+``` 
+
+</detail>
+
+<details>
+<summary>Which files changed?</summary>
+
+```
+$git log --name-only
+``` 
+
+</detail>
+
+<detail>
+<summary>Summary</summary>
+
+The log can show you when each commit was created, who created it, and other useful information about the commit, such as what changed in each file. You have great control over what is displayed
+
+</detail>
