@@ -250,17 +250,48 @@ $git log
 
 
 <details>
-<summary>What is Amend ?</summary>
+<summary>What is the Amend ?</summary>
 
 Amend is a feature that allows you to modify previously created commits. It allows you to add or remove files, change commit messages, or edit previously committed changes. With this feature, you can adjust your commit history flexibly and conveniently.
 
-
 </details>
+
+- Make the changes on your file.
+- Run the command to add the changes to index.
+
+```
+$git add <filename>
+```
+
+- Modify the last commit on your current branch.
+
+```
+$git commit --amend
+```
+
+- Git will open an editor where you can modify commit messages, add or remove files, or edit previously committed changes. Save and close the editor when done.
 
 </details>
 
 <details>
 <summary>3. Cherry-Picking</summary>
+
+<details>
+<summary>What is the Cherry-Picking?</summary>
+Cherry-Picking is the process of selecting commits on another branch and applying them to your current branch. This process allows you to take specific changes from one branch and move them to another branch independently. Cherry-Picking is often used when you want to apply some changes from another branch without wanting to merge that whole branch into your current branch.
+</details>
+
+- Go to your current branch and run the command: 
+
+```
+$git cherry-pick <commit code you want to apply>
+```
+
+- Review new commit history.
+
+```
+$git log
+```
 
 </details>
 
@@ -268,18 +299,74 @@ Amend is a feature that allows you to modify previously created commits. It allo
 
 ### Chapter 6. Interactive Rebasing
 
+<details>
+<summary>1. What is the Interactive Rebasing?</summary>
+Interactive rebase is a feature in Git that allows you to interact with and edit existing commits on a branch. This feature is useful when you need to clean up the commit history, merge multiple commits into one, or split a commit into several smaller commits.
+</details>
 
 
+<details>
+<summary>2. Command</summary>
+
+```
+$git rebase -i <commit>
+```
+
+> <commit> : commit hash, branch name or tag
+
+</details>
+
+
+<details>
+<summary>3. Optional keywords</summary>
+
+- Pick: Select this option to leave the commit unchanged.
+- Edit: Select this option to pause rebasing after this commit, allowing you to edit the commit message, commit content, or add new changes.
+- Squash: Select this option to combine this commit with the previous commit and merge the commit message together.
+- Fixup: Select this option to combine this commit with the previous commit but ignore the commit message.
+- Reword: Select this option to modify the commit message.
+
+</details>
 
 <br></br>
 
 ### Chapter 7. Workflow, Notes and Tags
 
 
+<details>
+<summary>1. Workflow</summary>
+
+
+<details>
+<summary></summary>
+
+</details>
 
 
 
+</details>
 
+<details>
+<summary></summary>
+
+
+<details>
+<summary></summary>
+
+</details>
+
+
+</details>
+
+<details>
+<summary></summary>
+
+<details>
+<summary></summary>
+
+</details>
+
+</details>
 
 <br></br>
 
