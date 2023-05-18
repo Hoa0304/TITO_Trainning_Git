@@ -20,6 +20,14 @@
 
 ### [Chapter 9. Using the Log]()
 
+### [Chapter 10. Important Git Commands and Metadata]()
+
+### [Chapter 11. Finding a Broken Commit: Bisect and Blame]()
+
+### [Chapter 12. Fixing Mistakes]()
+
+### [Chapter 13. Next Steps]()
+
 <br></br>
 
 ### Chapter 1. Introduction
@@ -565,3 +573,277 @@ $git log --name-only
 The log can show you when each commit was created, who created it, and other useful information about the commit, such as what changed in each file. You have great control over what is displayed
 
 </details>
+
+<br></br>
+
+### Chapter 10. Important Git Commands and Metadata
+
+#### STASH
+
+
+<details>
+<summary>What is Stash ?</summary>
+
+- Is a place where you can hold (stash) files you've modified but not yet committed
+
+
+```
+$git push --mirror
+```
+
+>  Copy the entire content of a Git repository to another repository, including branches, tags, and commit history.
+
+</details>
+
+
+<details>
+<summary>Command</summary>
+
+
+```
+$git stash 
+```
+
+```
+$git stash list
+```
+> show list stash create before
+
+```
+$git stash show
+```
+
+> Show the changes stored in the stash
+
+</details>
+
+
+#### CLEAN 
+
+Get rid of it
+
+<details>
+<summary>Command</summary>
+
+```
+$git clean
+```
+> Untracked files are gone never to be seen again.
+
+
+- To actually clean, Git requires that you tell it you really mean it by using the -f (force) flag : 
+
+```
+$git clean -f
+```
+
+</details>
+
+
+
+#### METADATA
+
+<details>
+<summary>Using show to see metadata</summary>
+
+```
+$git show -s HEAD --format='%an <%ae> %h %d'
+```
+
+- git show—the show command.
+- -s—silent (or quiet), which suppresses the difference output (try the 
+command without it to see).
+- HEAD tells show which commit you are interested in.
+- %an is the author's name.
+- %ae is the author's email address
+- %h is the abbreviated commit hash 
+- %d information about the current branch's position
+
+</details>
+
+
+<br></br>
+
+### Chapter 11. Finding a Broken Commit: Bisect and Blame
+#### BISECT
+
+
+<details>
+<summary>Start the search process</summary>
+
+```
+$git bisect start
+```
+
+-  Then, you need to specify the current last bad commit with the command :
+
+```
+$git bisect bad
+```
+
+- Next, you need to specify a previous commit that you know for sure is working properly with the command :
+
+```
+$git bisect good
+```
+
+</details>
+
+
+#### BLAME
+
+1. File history search
+
+- To search for information about the commit you want to find the history of that file.
+
+<details>
+<summary>git log</summary>
+
+- This command displays the history of commits and allows you to view information about different commits.
+
+
+</details>
+
+<details>
+<summary>git branch</summary>
+
+- This command displays a list of branches in Git's repository.
+
+</details>
+
+<details>
+<summary>git show</summary>
+
+- This command displays information about a specific commit.
+
+</details>
+
+
+<details>
+<summary>git diff</summary>
+
+- This command displays the difference between two commits or between two versions of the same file.
+
+
+</details>
+
+<details>
+<summary>git rev-parse</summary>
+
+
+- outputs the full SHA-1 hash of the current commit :
+
+```
+$git rev-parse HEAD
+```
+
+- outputs the abbreviated SHA-1 hash of the current commit :
+
+```
+$git rev-parse --short HEAD
+```
+
+- outputs the full SHA-1 hash of the tag named "v1.0.0" :
+
+```
+$git rev-parse v1.0.0
+```
+
+-  outputs the symbolic name of the current branch :
+
+```
+$git rev-parse --symbolic-full-name HEAD
+```
+
+</details>
+
+2. Ignore whitespace changes when searching history :
+
+```
+$git blame -w
+```
+
+3. Displays the history of a file and indicates who each line was changed by:
+
+```
+$git blame -w -M3
+```
+
+
+<br></br>
+
+
+### Chapter 12. Fixing Mistakes
+
+
+
+<details>
+<summary>Amend the last commit</summary>
+
+- Add changes to the previous commit
+- Edit the commit message and add any additional changes.
+```
+$git commit --amend
+```
+
+- If you don't want to edit the message when you add the files, enter:
+
+```
+$git commit --amend --no-edit
+```
+
+</details>
+
+<details>
+<summary>Undo a commit</summary>
+
+- Creates a new commit that undoes the changes made in a previous commit.
+
+```
+$git revert
+```
+
+</details>
+
+
+<details>
+<summary>Reset to a previous commit</summary>
+
+- Go back to a previous commit and discard any changes made since then
+
+```
+$git reset
+```
+- This will remove any commits made after the specified commit and reset the branch to that commit.
+
+</details>
+
+
+<summary>Branch name change</summary>
+
+
+```
+$git branch -m <currentName> <desiredName>
+```
+
+</details>
+
+<br></br>
+
+### Chapter 13. Next Steps
+
+1. Creating a new branch: Use the git branch command to create a new branch for your work. You can then use git checkout to switch to that branch.
+
+2. Making changes: Make changes to your files as needed. You can use git add to stage changes for commit.
+
+3. Committing changes: Use git commit to commit your changes to the current branch.
+
+4. Pushing changes: Use git push to push your changes to a remote repository.
+
+5. Pulling changes: Use git pull to pull changes from a remote repository into your local repository.
+
+6. Merging changes: Use git merge to merge changes from one branch into another.
+
+7. Resolving conflicts: If there are conflicts between different versions of a file, use git mergetool to resolve them.
+
+8. Reverting changes: Use git revert to undo changes made in a previous commit.
