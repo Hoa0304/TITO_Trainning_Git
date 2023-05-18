@@ -338,33 +338,111 @@ $git rebase -i <commit>
 
 
 <details>
-<summary></summary>
+<summary>What is the workflow?</summary>
+Workflow is the process of working with branches, commits and merges
+</details>
+
+
 
 </details>
 
+
+<details>
+<summary>2. Notes</summary>
+
+<details>
+<summary>What is the notes?</summary>
+ A node is an object that stores information about a specific commit. Each commit in Git has a unique node, called a "SHA-1 hash", which is a 40-character string used to identify and determine the commit.
+</details>
+
+- Viewing information about a specific commit:
+
+```
+$git show <commit-hash>
+```
+
+- Viewing information about the entire history of a repository:
+
+```
+$git log
+```
+
+- Viewing information about the history of a specific branch:
+
+```
+$git log <branch-name>
+```
+
+- Viewing information about the history of a specific file:
+
+```
+$git log <file-name>
+```
+
+- Viewing information about the history of a specific folder:
+
+```
+$git log <folder-name>
+```
+
+- Searching for commits based on the content of the commit message or changes:
+
+```
+$git log --grep="<search-term>"
+```
 
 
 </details>
 
 <details>
-<summary></summary>
-
-
-<details>
-<summary></summary>
-
-</details>
-
-
-</details>
+<summary>3. Tags</summary>
 
 <details>
-<summary></summary>
-
-<details>
-<summary></summary>
-
+<summary>What is the tags?</summary>
+"Tags" is one of the important features of Git, allowing you to mark specific commits as released versions of your software or project. A tag is simply a label (name) attached to a specific commit in the history of your repository.
 </details>
+
+- Creating a new tag:
+
+```
+$git tag <tag-name>
+```
+
+- Marking a specific commit as a version:
+
+```
+$git tag <tag-name> <commit-hash>
+```
+
+- Viewing a list of existing tags:
+
+```
+$git tag
+```
+
+-Viewing the details of a tag:
+
+```
+$git show <tag-name>
+```
+
+- Deleting a tag:
+
+```
+$git tag -d <tag-name>
+```
+
+- Pushing a tag to a remote repository:
+
+```
+$git push origin <tag-name>
+```
+
+- Pushing all tags to a remote repository:
+
+```
+$git push --tags
+```
 
 </details>
 
