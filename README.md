@@ -471,7 +471,7 @@ $ git config --global alias.<alias-name> '<git-command>'
 $git config --global alias.st status
 ``` 
 
-</detail>
+</details>
 
 
 
@@ -486,7 +486,7 @@ $git config --global alias.cb checkout -b
 
 > The important thing to notice here is that your alias can take one or more flags. 
 
-</detail>
+</details>
 
 
 
@@ -497,7 +497,7 @@ $git config --global alias.cb checkout -b
 $git config --global alias.cam commit -a -m
 ``` 
 
-</detail>
+</details>
 
 <details>
 <summary>Commits everything along with the message you give it</summary>
@@ -506,7 +506,7 @@ $git config --global alias.cam commit -a -m
 $git cam  "Here is you message"
 ``` 
 
-</detail>
+</details>
 
 
 <details>
@@ -517,7 +517,7 @@ $git config –global alias.lg log --graph --pretty=format:'%Cred%h%Creset
 -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit
 ``` 
 
-</detail>
+</details>
 
 
 <details>
@@ -535,7 +535,7 @@ $git config --edit --global
 $git config --global alias.nx "log --name-only --oneline"
 ```
 
-</detail>
+</details>
 
 <br></br>
 
@@ -548,7 +548,7 @@ $git config --global alias.nx "log --name-only --oneline"
 $git log --oneline
 ``` 
 
-</detail>
+</details>
 
 <details>
 <summary>Which files changed?</summary>
@@ -557,11 +557,11 @@ $git log --oneline
 $git log --name-only
 ``` 
 
-</detail>
+</details>
 
-<detail>
+<details>
 <summary>Summary</summary>
 
 The log can show you when each commit was created, who created it, and other useful information about the commit, such as what changed in each file. You have great control over what is displayed
 
-</detail>
+</details>
