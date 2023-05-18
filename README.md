@@ -158,26 +158,26 @@ $git log
 
 ### Chapter 4. Merge, Pull Request and Handling Merge Conflicts
 
-<detail>
+<details>
 <summary>1. Merge</summary>
 
--  Merge is the process of combining two or more branches of source code into a single branch. This allows developers to bring together changes made on separate branches and ensures that the final source code works as intended. To merge two branches, you can use the git merge command with the name of the branch to merge.
+ Merge is the process of combining two or more branches of source code into a single branch. This allows developers to bring together changes made on separate branches and ensures that the final source code works as intended. To merge two branches, you can use the git merge command with the name of the branch to merge.
 
 ```
 $git merge <branch-name>
 ```
 
-</detail>
+</details>
 
 
-<detail>
+<details>
 <summary>2. Pull Requests</summary>
 
--  Pull Requests are a way for developers to propose changes to a codebase and have the request reviewed and merged. This allows developers to collaborate with each other and ensures that changes are properly checked out and tested before being added to the master branch. To create a Pull Request, you can use a source code hosting service like GitHub
+Pull Requests are a way for developers to propose changes to a codebase and have the request reviewed and merged. This allows developers to collaborate with each other and ensures that changes are properly checked out and tested before being added to the master branch. To create a Pull Request, you can use a source code hosting service like GitHub
 
-</detail>
+</details>
 
-<detail>
+<details>
 <summary>3. Merge conflicts</summary>
 
 1. Identify conflicting files:
@@ -214,21 +214,21 @@ $git commit
 $git push
 ```
 
-</detail>
+</details>
 
 <br></br>
 
 ### Chapter 5. Rebasing, Amend and Cherry-Picking
 
-<detail>
+<details>
 <summary>1.Rebasing</summary>
 
-<detail>
+<details>
 <summary>What is the rebasing?</summary>
 
 Rebasing is the process of moving your current branch to another branch and reselecting the commits on the original branch to include them in your current branch. This process helps to merge changes across different branches and minimizes the dispersion of data in the commit history.
 
-</detail>
+</details>
 
 - Go to your current branch and run the command
 
@@ -243,26 +243,26 @@ $git rebase <branch name you want to merge into>
 ```
 $git log
 ```
-</detail>
+</details>
 
-<detail>
+<details>
 <summary>2.  Amend</summary>
 
 
-<detail>
+<details>
 <summary>What is Amend ?</summary>
 
 Amend is a feature that allows you to modify previously created commits. It allows you to add or remove files, change commit messages, or edit previously committed changes. With this feature, you can adjust your commit history flexibly and conveniently.
 
 
-</detail>
+</details>
 
-</detail>
+</details>
 
-<detail>
+<details>
 <summary>3. Cherry-Picking</summary>
 
-</detail>
+</details>
 
 <br></br>
 
