@@ -4,7 +4,7 @@
 
 ### [Chapter 1. Introduction]()
 
-### [Chapter 2. Creating Your Repositor]()
+### [Chapter 2. Creating Your Repository]()
 
 ### [Chapter 3. Branching, Places and GUIs]()
 
@@ -39,7 +39,7 @@
 
 <br></br>
 
-### Chapter 2. Creating Your Repositor
+### Chapter 2. Creating Your Repository
 
 <details>
 <summary>1. Create a repository then write code </summary>
