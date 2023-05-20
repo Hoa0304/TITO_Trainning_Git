@@ -98,7 +98,7 @@ $git commit -m "commit"
 - use to create a connection from local repo to server repo
 
 ```
-$git remote add origin HTTPS/SSH
+$git remote add origin <remote_url>
 ```
 - Push code 
 
